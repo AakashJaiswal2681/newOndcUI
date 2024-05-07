@@ -1,0 +1,13 @@
+.description {
+  margin-top: 3rem;
+  text-align: center;
+  align-items: center;
+  color: #204f4e;
+}
+
+.types {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}

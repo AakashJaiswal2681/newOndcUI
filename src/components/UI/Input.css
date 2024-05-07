@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.form {
+    background-color: #204f4e;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    font-size: 22px;
+}
+
+.input label {
+    font-size: 22px;
+    text-align: start;
+    font-family: monospace;
+    margin-left: 2rem;
+}
+
+.input input {
+    font-family: monospace;
+    margin: 1rem 2rem;
+    padding: 0.5rem;
+    border: 1px solid #204f4e;
+    border-radius: 10px;
+}
