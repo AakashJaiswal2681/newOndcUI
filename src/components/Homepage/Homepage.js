@@ -10,7 +10,10 @@ import TypeOfStay from "./TypeOfStay";
 import hotelImage from "../../assets/hotel.jpg";
 import villaImage from "../../assets/villa.jpg";
 import homestayImage from "../../assets/homestay.jpg";
-import SelectOption from "../UI/QuestionsWithOptions/SelectOption";
+// import SelectOption from "../UI/QuestionsWithOptions/SelectOption";
+import USPSection from "./USPSection";
+import SignUp from "../SignUp/SignUp";
+import Button from "../UI/Button";
 
 const typeOfStay = [
   {
@@ -89,6 +92,12 @@ const typeOfStay = [
 
 const Homepage = () => {
   const [showLogin, setShowLogin] = useState(false);
+  const [showSignup, setShowSignup] = useState(false);
+
+  const handleQuestion = () => {
+    window.location.pathname = "/question"
+  }
+
 
   const typeOfStayPage = typeOfStay.map((type) => (
     <TypeOfStay
@@ -109,11 +118,20 @@ const Homepage = () => {
     setShowLogin(false);
   };
 
+  const showSignupScreen = () => {
+    setShowSignup(true);
+  };
+
+  const hideSignupScreen = () => {
+    setShowSignup(false);
+  };
+
   return (
     <>
       <div className="homepage">
-        {showLogin && <Login onHide={hideLoginScreen} />}
-        <Header onShow={showLoginScreen} />
+        {showLogin && <Login onHideLogin={hideLoginScreen} />}
+        {showSignup && <SignUp onHideSignup={hideSignupScreen} />}
+        <Header onShowLogin={showLoginScreen} onShowSignup={showSignupScreen} />
         <div className="carousel">
           <Carousel />
         </div>
@@ -128,8 +146,8 @@ const Homepage = () => {
         </div>
       </div>
       <div className="types">{typeOfStayPage}</div>
-      <SelectOption type="checkbox" label="some question"/>
-      <SelectOption type="checkbox" label="some question"/>
+      <USPSection />
+      <Button onClick={handleQuestion}>Questions</Button>
     </>
   );
 };

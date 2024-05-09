@@ -1,14 +1,12 @@
-// import "./SingleSelectOption.css";
+// import Card from "../Card";
 
-import Card from "../Card";
-
-const SingleSelectOption = (props) => {
+const SelectOption = (props) => {
     return (
-        <Card>
+        <div>
             <input type={props.type} id={props.id} value={props.value}/>
             <label for={props.for}>{props.label}</label>
-        </Card>
+        </div>
     );
 }
 
-export default SingleSelectOption;
+export default SelectOption;

@@ -4,6 +4,18 @@ import Card from "../UI/Card";
 import "./TypeOfStay.css";
 
 const TypeOfStay = (props) => {
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const signUp = document.getElementById('1');
+    
+    signUp.addEventListener('click', function () {
+      window.location.pathname = '/signup';
+
+      console.log('value :', signUp);
+    });
+  });
+
+
   return (
     <Card custom='card-style-type-stay'>
       <div>

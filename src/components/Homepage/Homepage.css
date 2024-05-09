@@ -1,8 +1,16 @@
 .description {
+  font-family: monospace;
   margin-top: 3rem;
   text-align: center;
-  align-items: center;
+}
+
+.description h1 {
+  font-size: 32px;
   color: #204f4e;
+}
+
+.description p {
+  font-size: 16px;
 }
 
 .types {

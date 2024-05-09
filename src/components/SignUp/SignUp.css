@@ -1,0 +1,21 @@
+.card-style-signup {
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    padding-top:  80px; 
+    width: 350px; 
+    height: 450px;
+    color: #204f4e;
+    border: 5px solid #f2ba5f;
+}
+
+.register-button {
+    margin-top: 16px;
+    padding: 8px;
+    border-radius: 8px;
+}

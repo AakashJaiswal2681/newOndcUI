@@ -11,7 +11,7 @@ const Login = (props) => {
   };
 
   return (
-    <Modal onHide={props.onHide}>
+    <Modal onHide={props.onHideLogin}>
       <Card custom="card-style-login">
         <form>
           <Input

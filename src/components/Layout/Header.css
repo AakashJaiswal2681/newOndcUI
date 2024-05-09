@@ -27,6 +27,11 @@
     margin-bottom: 1rem;
 }
 
-.btn {
-    padding: 1rem 1.5rem;
+.login-btn, .signup-btn {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.signup-btn {
+    margin-left: 8px;
 }
